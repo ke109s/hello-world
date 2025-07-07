@@ -24,7 +24,7 @@ jobs:
         pip install flake8
 
     - name: Analysing the code with flake8
-        run: |
+      run: |
           flake8 . > flake8_report.txt || true
 
     - name: Upload flake8 report
